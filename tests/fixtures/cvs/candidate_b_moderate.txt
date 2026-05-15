@@ -1,0 +1,19 @@
+EXPERIENCE
+Python Developer — WebAgency Ltd (2021–2024)
+  • Built Django web applications for e-commerce clients
+  • Wrote PostgreSQL queries and optimised slow pages
+  • Deployed applications on AWS EC2 using Elastic Beanstalk
+
+Junior Developer — StartupXYZ (2019–2021)
+  • Maintained a Flask REST API used by ~500 daily active users
+  • Fixed bugs and wrote unit tests
+
+EDUCATION
+BSc Computer Science — Coventry University (2019)
+2:1
+
+SKILLS
+Python, Django, Flask, PostgreSQL, AWS EC2, REST APIs, Git, Linux
+
+LOCATION: Birmingham, UK (happy to relocate to London)
+NOTICE PERIOD: 4 weeks

@@ -1,0 +1,22 @@
+EXPERIENCE
+Senior Python Engineer — PayCore Ltd (2019–2024)
+  • Built payment processing microservices handling 50k req/s using FastAPI and PostgreSQL
+  • Designed Kafka-based event streaming architecture for real-time transaction processing
+  • Optimised slow PostgreSQL queries reducing p99 latency from 800ms to 45ms
+  • Mentored 3 junior engineers; ran weekly code review sessions
+  • Managed AWS infrastructure (EC2, RDS, Lambda, SQS) using Terraform
+
+Backend Engineer — CloudBase Ltd (2017–2019)
+  • Developed Django REST APIs for a B2B SaaS platform
+  • Introduced Docker and CI/CD pipelines, reducing deployment time by 60%
+
+EDUCATION
+MEng Software Engineering — University of Edinburgh (2017)
+First-class honours
+
+SKILLS
+Python, FastAPI, Django, PostgreSQL, Kafka, RabbitMQ, AWS (EC2, RDS, Lambda, SQS),
+Docker, Kubernetes, Terraform, Redis, REST APIs, GraphQL
+
+LOCATION: London, UK
+NOTICE PERIOD: 1 month

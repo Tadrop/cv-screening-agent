@@ -1,0 +1,35 @@
+Senior Backend Engineer — BuildRight Client: FinanceFlow Ltd
+
+ABOUT THE ROLE
+FinanceFlow is a Series B fintech startup processing $2B+ in annual transactions.
+We are looking for a Senior Backend Engineer to join our platform team and help
+scale our core payment processing infrastructure.
+
+RESPONSIBILITIES
+- Design and build high-throughput, low-latency microservices in Python
+- Own the reliability and scalability of our PostgreSQL database layer
+- Integrate with third-party payment providers (Stripe, Plaid, Adyen)
+- Mentor junior engineers and contribute to architecture decisions
+- Participate in on-call rotation (PagerDuty, approx. 1 week per quarter)
+
+REQUIRED QUALIFICATIONS
+- 4+ years of professional Python backend development experience
+- Strong expertise in at least one Python web framework (FastAPI preferred, Django or Flask acceptable)
+- Proficiency with PostgreSQL — query optimisation, indexing, migrations
+- Experience with message queues (Kafka or RabbitMQ)
+- Solid understanding of REST API design and versioning
+- AWS experience (EC2, RDS, Lambda, SQS)
+- Track record of delivering production systems at scale (>10k req/s)
+- Excellent written and verbal communication skills
+
+NICE TO HAVE
+- Kubernetes / Docker orchestration experience
+- Prior fintech or payments domain knowledge
+- Experience with Terraform or similar IaC tooling
+- BSc or higher in Computer Science, Software Engineering, or related field
+
+LOGISTICS
+- Location: London, UK (hybrid — 2 days/week in office)
+- Salary: £90,000 – £115,000 depending on experience
+- Visa sponsorship: not available for this role
+- Notice period: up to 3 months acceptable

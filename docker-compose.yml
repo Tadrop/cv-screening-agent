@@ -1,0 +1,35 @@
+services:
+  agent:
+    build: .
+    image: cv-screening-agent:latest
+    container_name: cv-screening-agent
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      # Override the data/log paths to live on the mounted volumes below.
+      DB_PATH: /app/data/candidates.db
+      USAGE_LOG_PATH: /app/data/usage_log.json
+      ERROR_LOG_PATH: /app/logs/error_log.md
+      BRIEFS_DIR: /app/data/briefs
+      ATTACHMENTS_DIR: /app/data/attachments
+      STRUCTURED_LOGS: "1"
+    volumes:
+      # SQLite, briefs, attachments, usage ledger — persist across container restarts.
+      - agent-data:/app/data
+      # Self-annealing error log — also persist for post-incident review.
+      - agent-logs:/app/logs
+      # Google OAuth credentials/token — mount read-only from host.
+      - ./credentials.json:/app/credentials.json:ro
+      - ./token.json:/app/token.json
+    # Healthcheck pings the SQLite file to confirm the scheduler started.
+    healthcheck:
+      test: ["CMD", "test", "-f", "/app/data/candidates.db"]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+volumes:
+  agent-data:
+  agent-logs:
