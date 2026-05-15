@@ -5,7 +5,6 @@ All candidate data is stored with a hashed ID — raw PII never touches the DB.
 
 import sqlite3
 from pathlib import Path
-from typing import Generator
 import os
 
 DB_PATH = Path(os.getenv("DB_PATH", "data/candidates.db"))

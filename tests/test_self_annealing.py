@@ -6,19 +6,13 @@ All external I/O is mocked — tests run fully offline.
 
 from __future__ import annotations
 
-import time
-from dataclasses import dataclass
 from datetime import datetime, timezone
-from pathlib import Path
-from unittest.mock import MagicMock, call, patch
+from unittest.mock import MagicMock, patch
 
-import pytest
-
-from src.pipeline.strategies import classify_error, STRATEGY_MAP
+from src.pipeline.strategies import classify_error
 from src.pipeline.self_annealing import (
     FailureRecord,
     SelfAnnealingPipeline,
-    StageResult,
     _extract_validation_repair_hint,
     _inject_repair_hint,
     _clear_repair_hint,
@@ -310,8 +304,6 @@ def test_scorer_reads_active_repair_hint():
 
     _inject_repair_hint("Field 'reasoning': must have at least 3 items")
     try:
-        from src.scorer.scorer import score_candidate
-        # Read the hint directly via the builder
         prompt = _build_system_prompt(get_active_repair_hint())
         assert "REPAIR INSTRUCTION" in prompt
         assert "reasoning" in prompt

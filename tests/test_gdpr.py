@@ -4,12 +4,8 @@ Tests for the GDPR 90-day purge job.
 
 from __future__ import annotations
 
-import os
 from datetime import datetime, timezone
-from pathlib import Path
 from unittest.mock import patch
-
-import pytest
 
 from src.gdpr.purge import run_purge, _purge_candidate
 

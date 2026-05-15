@@ -5,13 +5,12 @@ Tests for CV extraction and identity stripping.
 from __future__ import annotations
 
 import textwrap
-from pathlib import Path
 from unittest.mock import MagicMock, patch
 
 import pytest
 
-from src.parser.extractor import ExtractionResult, _normalise, extract_text
-from src.parser.identity_stripper import StripResult, strip_identity
+from src.parser.extractor import _normalise, extract_text
+from src.parser.identity_stripper import strip_identity
 
 
 # ──────────────────────────────────────────────────────────────────────────────
